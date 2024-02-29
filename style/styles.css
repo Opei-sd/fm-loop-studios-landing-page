@@ -1,0 +1,166 @@
+/* custom colors and fonts for project */
+:root {
+  --White: #ffffff;
+  --Black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+  --alata-regular: "Alata", sans-serif;
+  --josefin-sans: "Josefin Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  font-family: var(--alata-regular);
+}
+
+.container {
+  padding: 0 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.josefin__text {
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+}
+
+.hero__section {
+  background-image: url("../assets/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--White);
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero__section h1 {
+  color: var(--White);
+  font-size: 3.5rem;
+  font-weight: 200;
+  padding: 3rem;
+}
+
+.hero__section .text__box {
+  border: #ffffff 2px solid;
+  margin-top: 8rem;
+  max-width: 500px;
+}
+
+.vr__section {
+  margin: 8rem 0 8rem 0;
+}
+
+.vr__section__container {
+  position: relative;
+}
+
+.vr__section__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5rem 5rem 0 5rem;
+  background-color: var(--White);
+  width: 550px;
+}
+
+.vr__section__text h2 {
+  color: var(--Black);
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.vr__section__text p {
+  color: var(--DarkGray);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.creations__section {
+  margin-bottom: 8rem;
+}
+
+.creations__section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.creations__section__header h2 {
+  color: var(--Black);
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+}
+
+.creations__section__header button {
+  color: var(--Black);
+  font-weight: 600;
+  padding: 12px 30px;
+  letter-spacing: 3px;
+  cursor: gi;
+  background-color: transparent;
+  border: var(--Black) 1px solid;
+}
+
+.creations__section__content {
+  display: grid;
+  grid-template-columns: repeat(4, 205px);
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.creation__card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.creation__card p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 1rem;
+  color: var(--White);
+  font-weight: 400;
+  font-size: 30px;
+  text-wrap: wrap;
+}
+
+.creation__card img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  object-fit: cover;
+}
