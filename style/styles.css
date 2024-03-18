@@ -126,7 +126,7 @@ nav ul li a:hover {
   font-weight: 600;
   padding: 12px 30px;
   letter-spacing: 3px;
-  cursor: gi;
+  cursor: pointer;
   background-color: transparent;
   border: var(--Black) 1px solid;
 }
@@ -163,4 +163,53 @@ nav ul li a:hover {
   height: 100%;
   opacity: 0.9;
   object-fit: cover;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+footer {
+  background: #000;
+  color: white;
+  padding: 2rem 0 2rem 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_left img {
+  margin-bottom: 20px;
+}
+
+.footer_left ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+.footer_left ul li a {
+  color: white;
+}
+
+.footer_social__icons ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.footer_right ul {
+  margin-bottom: 20px;
+}
+
+.footer_right p {
+  color: var(--DarkGray);
 }
